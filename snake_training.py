@@ -5,12 +5,12 @@ from scoreboard import Scoreboard
 import time
 
 
-
 screen = Screen()
 snake1 = Snake()
 food = Food()
 the_score = Scoreboard()
 
+#listen key command
 screen.listen()
 screen.onkey(snake1.right, 'd')
 screen.onkey(snake1.left, 'a')
@@ -19,7 +19,7 @@ screen.onkey(snake1.down, 's')
 
 
 game_is_on = True
-#screen.onkey(game_is_on = False,'')
+
 
 #screen setup
 screen.setup(600,600)
